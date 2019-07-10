@@ -1,0 +1,97 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+ content:"";
+ display:block;
+ clear: both;
+}
+
+header {
+	font-family: verdana, arial, helvetica, sans-serif;
+	color: #333;
+}
+
+a {
+	color: #666;
+}
+
+.index-theme {
+	padding: 25px;
+	font-size: 1.5em;
+}
+
+.index-text {
+	margin-left: 55px;
+	font-size: 13px;
+	line-height: 25px;
+}
+
+.index-link {
+	margin-left: 40px;
+	padding: 15px;
+	color: #666;
+	font-size: 13px;
+}
+
+table {
+	width: 100%;
+	margin-left: 20px;
+	text-align: center;
+	border-spacing: 2px;
+	color: #333;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+table td {
+	padding-bottom: 7px;
+	padding-left: 5px;
+	padding-right: 5px;
+	line-height: 18px;
+}
+
+.new-theme {
+	padding: 20px;
+	margin-left: 15px;
+}
+
+.post {
+	font-size: 1.5em;
+	padding: 20px;
+	margin-left: 15px;
+}
+
+.post-form {
+	margin-left: 35px;
+}
+
+.post1 {
+	font-size: 13px;
+}
+
+input {
+	display: inline-block;
+}
+
+.new-link {
+	text-decoration: none;
+}
