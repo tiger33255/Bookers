@@ -1,37 +1,5 @@
-<p><%= flash[:alert] %></p>
 <header>
-	<h2 class="new-theme">Books</h2>
-	  <table>
-	  	<thead>
-	  		<tr>
-	  			<th>Title</th>
-	  			<th>Body</th>
-	  			<th></th>
-	  			<th></th>
-	  			<th></th>
-	  		</tr>
-	  	</thead>
-		  	<tbody>
-			  	<% @books.each do |book| %>
-				  	<tr>
-				  		<td class="new-link" ><%= book.title%></td>
-				  		<td class= "new-link" ><%= book.body %></td>
-				  		<td><%= link_to 'Show' , book_path(book) %></td>
-				  		<td><%= link_to 'Edit' , edit_book_path(book) %></td>
-				  		<td><%= link_to 'Destroy' , book_path(book), method: :'delete',"data-confirm" => "Are you sure?" %></td>
-				  	</tr>
-			  	<% end %>
-		  	</tbody>
-	  </table>
-
-	<h2 class="post">New book</h2>
-	<div class="post-form">
-		<%= form_for(@book) do |f| %>
-			<p class="post1">Title</p>
-			<%= f.text_field :title %>
-			<p class="post1">Body</p>
-			<%= f.text_area :body %>
-			<%= f.submit 'Create Book' %>
-		<% end %>
-	</div>
+	<h1 class="index-theme"><strong>ようこそ　Bookersへ！</strong></h1>
+	　<p class="index-text"><strong>Bookers</strong>では、さまざまな書籍に関するあなたの意見や<br><br>印象を共有し交換することができます</p>
+	<p class="index-link"><%= link_to "start", books_path %></p>
 </header>

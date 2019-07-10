@@ -5,11 +5,11 @@ class BooksController < ApplicationController
 
   def index
   	@books = Book.all
+    @book = Book.new
   end
 
   def new
-  	@book = Book.new
-  	@books = Book.all
+
   end
 
   def edit
@@ -33,7 +33,7 @@ class BooksController < ApplicationController
   def destroy
     book= Book.find(params[:id])
     book.destroy
-    redirect_to new_book_path, flash: {alert: "book was successfully destroyed."}
+    redirect_to books_path, flash: {alert: "book was successfully destroyed."}
   end
   private
 
